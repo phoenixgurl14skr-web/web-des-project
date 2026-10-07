@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+    <title>Ritika Sharma | Web Development Portfolio</title>
+    <meta name="description"
+        content="A personal portfolio website showcasing web development skills, projects and contact information.">
+
+    <meta name="keywords"
+        content="web development, HTML, CSS, JavaScript, portfolio, Anuj Vats">
+
+    <meta name="author" content="Anuj Vats">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #fff5f8;
+            color: #3d2933;
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+        header {
+            background: #f8b8cc;
+            padding: 18px 8%;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #6d2145;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #4a2031;
+            font-weight: bold;
+        }
+
+        nav a:hover,
+        nav a:focus {
+            color: #8e3159;
+            text-decoration: underline;
+        }
+
+        /* Hero */
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            background: linear-gradient(135deg, #ffe0eb, #fff7fa);
+        }
+
+        .hero h1 {
+            font-size: 45px;
+            color: #7d2850;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 19px;
+            max-width: 650px;
+            margin: auto;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 25px;
+            background: #c94f7c;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+        }
+
+        .button:hover,
+        .button:focus {
+            background: #9f315d;
+        }
+
+        /* Sections */
+        section {
+            padding: 60px 8%;
+        }
+
+        section h2 {
+            text-align: center;
+            color: #7d2850;
+            margin-bottom: 25px;
+            font-size: 32px;
+        }
+
+        .content {
+            max-width: 850px;
+            margin: auto;
+            text-align: center;
+        }
+
+        /* Skills */
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .skill {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(100, 40, 60, 0.1);
+        }
+
+        .skill h3 {
+            color: #9f315d;
+            margin-bottom: 8px;
+        }
+
+        /* Contact */
+        form {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 18px;
+            box-shadow: 0 5px 15px rgba(100, 40, 60, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #edc3d1;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+
+        input:focus,
+        textarea:focus {
+            outline: 3px solid #f2a8c1;
+            border-color: #c94f7c;
+        }
+
+        textarea {
+            height: 120px;
+            resize: vertical;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 25px;
+            background: #c94f7c;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:hover,
+        button:focus {
+            background: #9f315d;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #6d2145;
+            color: white;
+        }
+
+        /* Mobile */
+        @media (max-width: 700px) {
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .hero h1 {
+                font-size: 34px;
+            }
+
+            .skills {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Accessible navigation -->
+    <header>
+        <nav aria-label="Main navigation">
+
+            <div class="logo">Ritika Sharma</div>
+
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Hero -->
+        <section id="home" class="hero">
+
+            <h1>Welcome to My Portfolio</h1>
+
+            <p>
+                Hello! I am Ritika Sharma, a web development student
+                interested in creating modern and accessible websites.
+            </p>
+
+            <a class="button" href="#contact">
+                Contact Me
+            </a>
+
+        </section>
+
+        <!-- About -->
+        <section id="about">
+
+            <h2>About Me</h2>
+
+            <div class="content">
+                <p>
+                    I am learning HTML, CSS and JavaScript and
+                    developing creative and user-friendly websites.
+                    My goal is to build websites that are attractive,
+                    responsive and accessible to everyone.
+                </p>
+            </div>
+
+        </section>
+
+        <!-- Skills -->
+        <section id="skills">
+
+            <h2>My Skills</h2>
+
+            <div class="skills">
+
+                <article class="skill">
+                    <h3>HTML</h3>
+                    <p>
+                        Creating well-structured and semantic web pages.
+                    </p>
+                </article>
+
+                <article class="skill">
+                    <h3>CSS</h3>
+                    <p>
+                        Designing responsive and visually appealing websites.
+                    </p>
+                </article>
+
+                <article class="skill">
+                    <h3>JavaScript</h3>
+                    <p>
+                        Adding interaction and dynamic functionality.
+                    </p>
+                </article>
+
+                <article class="skill">
+                    <h3>Git & GitHub</h3>
+                    <p>
+                        Managing and publishing web development projects.
+                    </p>
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- Contact -->
+        <section id="contact">
+
+            <h2>Contact Me</h2>
+
+            <form>
+
+                <label for="name">Your Name</label>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your name"
+                    required
+                >
+
+                <label for="email">Email Address</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email"
+                    required
+                >
+
+                <label for="message">Message</label>
+                <textarea
+                    id="message"
+                    name="message"
+                    placeholder="Write your message"
+                    required
+                ></textarea>
+
+                <button type="submit">
+                    Send Message
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Ritika Sharma. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
