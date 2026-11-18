@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Book Collection</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>🌸 My Book Collection</h1>
+        <p>A little space for all your favourite books</p>
+    </header>
+
+    <main>
+
+        <section class="form-box">
+            <h2 id="formHeading">Add a New Book</h2>
+
+            <form id="bookForm">
+
+                <input
+                    type="text"
+                    id="title"
+                    placeholder="Book Title"
+                    required
+                >
+
+                <input
+                    type="text"
+                    id="author"
+                    placeholder="Author Name"
+                    required
+                >
+
+                <input
+                    type="number"
+                    id="year"
+                    placeholder="Publication Year"
+                    min="1"
+                    required
+                >
+
+                <button type="submit" id="submitBtn">
+                    + Add Book
+                </button>
+
+                <button
+                    type="button"
+                    id="cancelBtn"
+                    class="cancel-btn"
+                    hidden
+                >
+                    Cancel
+                </button>
+
+            </form>
+        </section>
+
+        <section class="collection">
+
+            <div class="collection-heading">
+                <h2>My Books 📚</h2>
+                <span id="bookCount">0 Books</span>
+            </div>
+
+            <div id="bookList" class="book-list">
+                <p>Loading books...</p>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        Made with ♡ | Book Collection App
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

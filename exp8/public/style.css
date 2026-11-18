@@ -1,0 +1,170 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fff5f8;
+    color: #493440;
+}
+
+header {
+    background: #f4c4d5;
+    text-align: center;
+    padding: 35px 15px;
+}
+
+header h1 {
+    color: #793b59;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #79576a;
+}
+
+main {
+    max-width: 850px;
+    width: 90%;
+    margin: 35px auto;
+}
+
+.form-box {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 18px #c58ba51a;
+    margin-bottom: 35px;
+}
+
+h2 {
+    color: #854461;
+    margin-bottom: 18px;
+}
+
+form {
+    display: grid;
+    gap: 12px;
+}
+
+input {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #e8c6d4;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #c76d91;
+}
+
+button {
+    padding: 12px;
+    background: #c76d91;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button:hover {
+    background: #a94f76;
+}
+
+.cancel-btn {
+    background: #9d8490;
+}
+
+.collection-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+#bookCount {
+    background: #f4d9e5;
+    color: #854461;
+    padding: 7px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+}
+
+.book-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.book-card {
+    background: white;
+    border: 1px solid #f0dce5;
+    border-radius: 13px;
+    padding: 20px;
+    box-shadow: 0 4px 15px #c58ba510;
+}
+
+.book-card h3 {
+    color: #854461;
+    margin-bottom: 10px;
+}
+
+.book-card p {
+    color: #806c77;
+    margin-bottom: 7px;
+    font-size: 14px;
+}
+
+.book-actions {
+    display: flex;
+    gap: 9px;
+    margin-top: 15px;
+}
+
+.book-actions button {
+    flex: 1;
+    font-size: 13px;
+    padding: 9px;
+}
+
+.edit-btn {
+    background: #e9b5ca;
+    color: #65364e;
+}
+
+.delete-btn {
+    background: #bd7180;
+}
+
+.empty-message {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 30px;
+    color: #987e8b;
+    background: white;
+    border-radius: 12px;
+}
+
+footer {
+    background: #793b59;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+@media (max-width: 600px) {
+    .book-list {
+        grid-template-columns: 1fr;
+    }
+
+    .collection-heading {
+        align-items: flex-start;
+    }
+}
